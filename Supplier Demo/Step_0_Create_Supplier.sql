@@ -1,0 +1,46 @@
+--- Create a new Supplier
+EXECUTE DATA_INSERTION.INSERT_SUPPLIER('BD Distributors Inc','David','Hart','MANAGER','COOLIDGE CORNER','BROOKLINE','MA','info@bddistributors.com', 1);
+
+
+
+
+
+
+--- Invald State
+EXECUTE DATA_INSERTION.INSERT_SUPPLIER('BD Distributors Inc','David','Hart','MANAGER','COOLIDGE CORNER','BROOKLINE','VA','info@bddistributors.com',1);
+
+--- Invald City
+EXECUTE DATA_INSERTION.INSERT_SUPPLIER('BD Distributors Inc','David','Hart','MANAGER','COOLIDGE CORNER','Wocester','MA','info@bddistributors.com',1);
+
+
+
+--- Create a new Product
+EXECUTE DATA_INSERTION.INSERT_PRODUCT(1,1,1,'MACBOOK AIR','13 INCH LAPTOP M2 CHIP', 500,500,1099); 
+
+--- Av Units are zero
+EXECUTE DATA_INSERTION.INSERT_PRODUCT(0,0,0,'MACBOOK AIR','13 INCH LAPTOP M2 CHIP', 0,500,1099); 
+
+--- Total Units are zero
+EXECUTE DATA_INSERTION.INSERT_PRODUCT(0,0,0,'MACBOOK AIR','13 INCH LAPTOP M2 CHIP', 500,0,1099); 
+
+
+--- Total Units less av Units
+EXECUTE DATA_INSERTION.INSERT_PRODUCT(0,0,0,'MACBOOK AIR','13 INCH LAPTOP M2 CHIP', 500,300,1099); 
+
+--- Price is zero
+EXECUTE DATA_INSERTION.INSERT_PRODUCT(0,0,0,'MACBOOK AIR','13 INCH LAPTOP M2 CHIP', 500,300,0); 
+
+
+
+COMMIT;
+/
+
+SELECT * FROM supplier;
+
+SELECT * FROM PRODUCT;
+
+SELECT * FROM product_category;
+
+SELECT * FROM WAREHOUSE;
+
+
