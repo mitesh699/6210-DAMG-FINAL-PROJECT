@@ -1,0 +1,32 @@
+---------------------------DROP TABLE-------------------------
+DROP TABLE CUSTOMER CASCADE CONSTRAINTS; 
+DROP TABLE INVOICE CASCADE CONSTRAINTS;
+DROP TABLE ORDERS CASCADE CONSTRAINTS;
+DROP TABLE PAYMENT_METHOD CASCADE CONSTRAINTS;
+DROP TABLE PRODUCT CASCADE CONSTRAINTS;
+DROP TABLE PRODUCT_CATEGORY CASCADE CONSTRAINTS;
+DROP TABLE RETURNS CASCADE CONSTRAINTS;
+DROP TABLE SUPPLIER CASCADE CONSTRAINTS;
+DROP TABLE WAREHOUSE CASCADE CONSTRAINTS;
+
+
+---------------------------DROP SEQUENCES-------------------------
+DROP SEQUENCE customer_seq;
+DROP SEQUENCE invoice_seq;
+DROP SEQUENCE orders_seq;
+DROP SEQUENCE pay_method_seq;
+DROP SEQUENCE product_seq;
+DROP SEQUENCE product_cat_seq;
+DROP SEQUENCE supplier_seq;
+DROP SEQUENCE returns_seq;
+DROP SEQUENCE warehouse_seq;  
+
+--------------------------DROP USERS----------------------------------
+DROP USER CUSTOMER;
+DROP USER SUPPLIER;
+
+-------------------------DROP VIEWS-----------------------------------
+
+-------------------------DROP PACKAGES---------------------------------
+DROP PACKAGE DATA_INSERTION;
+
