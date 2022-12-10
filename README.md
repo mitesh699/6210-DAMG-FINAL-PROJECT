@@ -7,9 +7,9 @@ Steps to execute the application:
 2.	Execute Step_1_DDL.sql
 3.	Execute Step_1.1_SEQ.sql
 4.	Execute Step_2_Triggers.sql
-5.	Execute Step_3_Roles.sql
-6.	Execute Step_4_DML.sql
-7.	Execute Step_5_DATA_SETUP.sql
+5.	Execute Step_3_DML.sql
+6.	Execute Step_4_DATA_SETUP.sql
+7.	Execute Step_5_Roles.sql
 8.  Execute Steps from Supplier Demo
 9.  Execute Step_6_VIEWS.sql 
 10. Execute Step_7_Indexes.sql 
